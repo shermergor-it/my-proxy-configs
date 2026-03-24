@@ -1,0 +1,43 @@
+#!name=Google AI & NextDNS
+#!desc=Gemini, NotebookLM и NextDNS (Без YouTube)
+
+[General]
+# Направляем DNS строго в NextDNS
+dns-server = https://dns.nextdns.io/e296f4
+# Запрещаем обход через системный DNS
+dns-direct-system = false
+# Перехватываем стандартный DNS трафик
+hijack-dns = :53
+
+[Rule]
+# --- NotebookLM & AI Kitchen ---
+DOMAIN-SUFFIX,notebooklm.google.com,DIRECT
+DOMAIN-SUFFIX,notebooklm.google,DIRECT
+DOMAIN-SUFFIX,notebooklm-pa.googleapis.com,DIRECT
+DOMAIN-SUFFIX,aitestkitchen.withgoogle.com,DIRECT
+DOMAIN-SUFFIX,labs.google,DIRECT
+DOMAIN-SUFFIX,labs.google.com,DIRECT
+
+# --- Gemini & Core AI ---
+DOMAIN-SUFFIX,gemini.google.com,DIRECT
+DOMAIN-SUFFIX,gemini.google,DIRECT
+DOMAIN-SUFFIX,bard.google.com,DIRECT
+DOMAIN-SUFFIX,deepmind.com,DIRECT
+DOMAIN-SUFFIX,deepmind.google,DIRECT
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,DIRECT
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,DIRECT
+DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com,DIRECT
+DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com,DIRECT
+
+# --- Авторизация и сервисы (из ваших исключений NextDNS) ---
+DOMAIN-SUFFIX,signaler-pa.clients6.google.com,DIRECT
+DOMAIN-SUFFIX,waa-pa.clients6.google.com,DIRECT
+DOMAIN-SUFFIX,aistudio.google.com,DIRECT
+DOMAIN-SUFFIX,apis.google.com,DIRECT
+
+# --- Исключаем YouTube (он пойдет по правилам основного конфига, т.е. через PROXY) ---
+DOMAIN-KEYWORD,youtube,PROXY
+DOMAIN-SUFFIX,googlevideo.com,PROXY
+DOMAIN-SUFFIX,ytimg.com,PROXY
+
+# Финальное уточнение: всё остальное от Google идет по общим правилам
