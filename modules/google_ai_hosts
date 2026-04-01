@@ -1,0 +1,49 @@
+#!name=Google AI Direct Mapping
+#!desc=Локальный резолв доменов Gemini, NotebookLM и Labs без использования NextDNS.
+#!category=Custom
+
+[Host]
+# --- Gemini & Core AI ---
+gemini.google = 45.155.204.190
+*.gemini.google = 45.155.204.190
+bard.google.com = 45.155.204.190
+*.bard.google.com = 45.155.204.190
+deepmind.com = 45.155.204.190
+*.deepmind.com = 45.155.204.190
+deepmind.google = 45.155.204.190
+*.deepmind.google = 45.155.204.190
+generativelanguage.googleapis.com = 45.155.204.190
+proactivebackend-pa.googleapis.com = 45.155.204.190
+alkalicore-pa.clients6.google.com = 45.155.204.190
+robinfrontend-pa.googleapis.com = 45.155.204.190
+aistudio.google.com = 45.155.204.190
+
+# --- NotebookLM & Labs ---
+notebooklm.google = 45.155.204.190
+*.notebooklm.google = 45.155.204.190
+notebooklm.google.com = 45.155.204.190
+*.notebooklm.google.com = 45.155.204.190
+notebooklm-pa.googleapis.com = 45.155.204.190
+aitestkitchen.withgoogle.com = 45.155.204.190
+labs.google = 45.155.204.190
+*.labs.google = 45.155.204.190
+labs.google.com = 45.155.204.190
+*.labs.google.com = 45.155.204.190
+
+# --- Auth & Service ---
+signaler-pa.clients6.google.com = 45.155.204.190
+waa-pa.clients6.google.com = 45.155.204.190
+apis.google.com = 45.155.204.190
+
+[Rule]
+# Принудительно направляем эти домены в DIRECT, чтобы применился [Host]
+DOMAIN-SUFFIX,gemini.google,DIRECT
+DOMAIN-SUFFIX,bard.google.com,DIRECT
+DOMAIN-SUFFIX,deepmind.com,DIRECT
+DOMAIN-SUFFIX,deepmind.google,DIRECT
+DOMAIN-SUFFIX,notebooklm.google,DIRECT
+DOMAIN-SUFFIX,notebooklm.google.com,DIRECT
+DOMAIN-SUFFIX,labs.google,DIRECT
+DOMAIN-SUFFIX,labs.google.com,DIRECT
+DOMAIN-SUFFIX,aistudio.google.com,DIRECT
+DOMAIN-SUFFIX,aitestkitchen.withgoogle.com,DIRECT
