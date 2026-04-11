@@ -1,3 +1,4 @@
+#!url=https://raw.githubusercontent.com/shermergor-it/my-proxy-configs/refs/heads/main/modules/google_ai_hosts
 #!name=Google AI Direct Mapping
 #!desc=Локальный резолв доменов Gemini, NotebookLM и Labs без использования NextDNS.
 #!category=Custom
@@ -17,6 +18,12 @@ proactivebackend-pa.googleapis.com = 45.155.204.190
 alkalicore-pa.clients6.google.com = 45.155.204.190
 robinfrontend-pa.googleapis.com = 45.155.204.190
 aistudio.google.com = 45.155.204.190
+
+# --- Добавлено для мобильного приложения Gemini ---
+gemini.google.com = 45.155.204.190
+*.gemini.google.com = 45.155.204.190
+firebaselogging-pa.googleapis.com = 45.155.204.190
+mobilesdk-pa.googleapis.com = 45.155.204.190
 
 # --- NotebookLM & Labs ---
 notebooklm.google = 45.155.204.190
@@ -47,3 +54,16 @@ DOMAIN-SUFFIX,labs.google,DIRECT
 DOMAIN-SUFFIX,labs.google.com,DIRECT
 DOMAIN-SUFFIX,aistudio.google.com,DIRECT
 DOMAIN-SUFFIX,aitestkitchen.withgoogle.com,DIRECT
+
+# --- Добавлено для синхронизации с блоком [Host] ---
+DOMAIN-SUFFIX,gemini.google.com,DIRECT
+DOMAIN,generativelanguage.googleapis.com,DIRECT
+DOMAIN,proactivebackend-pa.googleapis.com,DIRECT
+DOMAIN,alkalicore-pa.clients6.google.com,DIRECT
+DOMAIN,robinfrontend-pa.googleapis.com,DIRECT
+DOMAIN,signaler-pa.clients6.google.com,DIRECT
+DOMAIN,waa-pa.clients6.google.com,DIRECT
+DOMAIN,apis.google.com,DIRECT
+DOMAIN,notebooklm-pa.googleapis.com,DIRECT
+DOMAIN,firebaselogging-pa.googleapis.com,DIRECT
+DOMAIN,mobilesdk-pa.googleapis.com,DIRECT
