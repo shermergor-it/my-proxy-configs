@@ -5,42 +5,42 @@
 
 [Host]
 # --- Gemini & Core AI ---
-gemini.google = 45.155.204.190
-*.gemini.google = 45.155.204.190
-bard.google.com = 45.155.204.190
-*.bard.google.com = 45.155.204.190
-deepmind.com = 45.155.204.190
-*.deepmind.com = 45.155.204.190
-deepmind.google = 45.155.204.190
-*.deepmind.google = 45.155.204.190
-generativelanguage.googleapis.com = 45.155.204.190
-proactivebackend-pa.googleapis.com = 45.155.204.190
-alkalicore-pa.clients6.google.com = 45.155.204.190
-robinfrontend-pa.googleapis.com = 45.155.204.190
-aistudio.google.com = 45.155.204.190
+gemini.google = 45.144.176.208
+*.gemini.google = 45.144.176.208
+bard.google.com = 45.144.176.208
+*.bard.google.com = 45.144.176.208
+deepmind.com = 45.144.176.208
+*.deepmind.com = 45.144.176.208
+deepmind.google = 45.144.176.208
+*.deepmind.google = 45.144.176.208
+generativelanguage.googleapis.com = 45.144.176.208
+proactivebackend-pa.googleapis.com = 45.144.176.208
+alkalicore-pa.clients6.google.com = 45.144.176.208
+robinfrontend-pa.googleapis.com = 45.144.176.208
+aistudio.google.com = 45.144.176.208
 
 # --- Добавлено для мобильного приложения Gemini ---
-gemini.google.com = 45.155.204.190
-*.gemini.google.com = 45.155.204.190
-firebaselogging-pa.googleapis.com = 45.155.204.190
-mobilesdk-pa.googleapis.com = 45.155.204.190
+gemini.google.com = 45.144.176.208
+*.gemini.google.com = 45.144.176.208
+firebaselogging-pa.googleapis.com = 45.144.176.208
+mobilesdk-pa.googleapis.com = 45.144.176.208
 
 # --- NotebookLM & Labs ---
-notebooklm.google = 45.155.204.190
-*.notebooklm.google = 45.155.204.190
-notebooklm.google.com = 45.155.204.190
-*.notebooklm.google.com = 45.155.204.190
-notebooklm-pa.googleapis.com = 45.155.204.190
-aitestkitchen.withgoogle.com = 45.155.204.190
-labs.google = 45.155.204.190
-*.labs.google = 45.155.204.190
-labs.google.com = 45.155.204.190
-*.labs.google.com = 45.155.204.190
+notebooklm.google = 45.144.176.208
+*.notebooklm.google = 45.144.176.208
+notebooklm.google.com = 45.144.176.208
+*.notebooklm.google.com = 45.144.176.208
+notebooklm-pa.googleapis.com = 45.144.176.208
+aitestkitchen.withgoogle.com = 45.144.176.208
+labs.google = 45.144.176.208
+*.labs.google = 45.144.176.208
+labs.google.com = 45.144.176.208
+*.labs.google.com = 45.144.176.208
 
 # --- Auth & Service ---
-signaler-pa.clients6.google.com = 45.155.204.190
-waa-pa.clients6.google.com = 45.155.204.190
-apis.google.com = 45.155.204.190
+signaler-pa.clients6.google.com = 45.144.176.208
+waa-pa.clients6.google.com = 45.144.176.208
+apis.google.com = 45.144.176.208
 
 [Rule]
 # Принудительно направляем эти домены в DIRECT, чтобы применился [Host]
