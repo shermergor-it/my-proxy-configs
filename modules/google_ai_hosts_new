@@ -1,5 +1,5 @@
 #!url=https://raw.githubusercontent.com/shermergor-it/my-proxy-configs/refs/heads/main/modules/google_ai_hosts
-#!name=google_ai_hosts
+#!name=google_ai_hosts_new
 #!desc=Локальный резолв доменов Gemini, NotebookLM и Labs без использования NextDNS.
 #!category=Custom
 
