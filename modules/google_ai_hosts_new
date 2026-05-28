@@ -1,49 +1,40 @@
-#!url=https://raw.githubusercontent.com/shermergor-it/my-proxy-configs/refs/heads/main/modules/google_ai_hosts
-#!name=google_ai_hosts_new
-#!desc=Локальный резолв доменов Gemini, NotebookLM и Labs без использования NextDNS.
+#!name=google_ai_hosts_nextdns
+#!desc=Резолв доменов Gemini, NotebookLM и Labs через NextDNS DoH (e296f4)
 #!category=Custom
 
 [Host]
-# --- Gemini & Core AI ---
-gemini.google = 45.144.176.208
-*.gemini.google = 45.144.176.208
-bard.google.com = 45.144.176.208
-*.bard.google.com = 45.144.176.208
-deepmind.com = 45.144.176.208
-*.deepmind.com = 45.144.176.208
-deepmind.google = 45.144.176.208
-*.deepmind.google = 45.144.176.208
-generativelanguage.googleapis.com = 45.144.176.208
-proactivebackend-pa.googleapis.com = 45.144.176.208
-alkalicore-pa.clients6.google.com = 45.144.176.208
-robinfrontend-pa.googleapis.com = 45.144.176.208
-aistudio.google.com = 45.144.176.208
-
-# --- Добавлено для мобильного приложения Gemini ---
-gemini.google.com = 45.144.176.208
-*.gemini.google.com = 45.144.176.208
-firebaselogging-pa.googleapis.com = 45.144.176.208
-mobilesdk-pa.googleapis.com = 45.144.176.208
-
-# --- NotebookLM & Labs ---
-notebooklm.google = 45.144.176.208
-*.notebooklm.google = 45.144.176.208
-notebooklm.google.com = 45.144.176.208
-*.notebooklm.google.com = 45.144.176.208
-notebooklm-pa.googleapis.com = 45.144.176.208
-aitestkitchen.withgoogle.com = 45.144.176.208
-labs.google = 45.144.176.208
-*.labs.google = 45.144.176.208
-labs.google.com = 45.144.176.208
-*.labs.google.com = 45.144.176.208
-
-# --- Auth & Service ---
-signaler-pa.clients6.google.com = 45.144.176.208
-waa-pa.clients6.google.com = 45.144.176.208
-apis.google.com = 45.144.176.208
+gemini.google = server:https://dns.nextdns.io/e296f4
+*.gemini.google = server:https://dns.nextdns.io/e296f4
+bard.google.com = server:https://dns.nextdns.io/e296f4
+*.bard.google.com = server:https://dns.nextdns.io/e296f4
+deepmind.com = server:https://dns.nextdns.io/e296f4
+*.deepmind.com = server:https://dns.nextdns.io/e296f4
+deepmind.google = server:https://dns.nextdns.io/e296f4
+*.deepmind.google = server:https://dns.nextdns.io/e296f4
+generativelanguage.googleapis.com = server:https://dns.nextdns.io/e296f4
+proactivebackend-pa.googleapis.com = server:https://dns.nextdns.io/e296f4
+alkalicore-pa.clients6.google.com = server:https://dns.nextdns.io/e296f4
+robinfrontend-pa.googleapis.com = server:https://dns.nextdns.io/e296f4
+aistudio.google.com = server:https://dns.nextdns.io/e296f4
+gemini.google.com = server:https://dns.nextdns.io/e296f4
+*.gemini.google.com = server:https://dns.nextdns.io/e296f4
+firebaselogging-pa.googleapis.com = server:https://dns.nextdns.io/e296f4
+mobilesdk-pa.googleapis.com = server:https://dns.nextdns.io/e296f4
+notebooklm.google = server:https://dns.nextdns.io/e296f4
+*.notebooklm.google = server:https://dns.nextdns.io/e296f4
+notebooklm.google.com = server:https://dns.nextdns.io/e296f4
+*.notebooklm.google.com = server:https://dns.nextdns.io/e296f4
+notebooklm-pa.googleapis.com = server:https://dns.nextdns.io/e296f4
+aitestkitchen.withgoogle.com = server:https://dns.nextdns.io/e296f4
+labs.google = server:https://dns.nextdns.io/e296f4
+*.labs.google = server:https://dns.nextdns.io/e296f4
+labs.google.com = server:https://dns.nextdns.io/e296f4
+*.labs.google.com = server:https://dns.nextdns.io/e296f4
+signaler-pa.clients6.google.com = server:https://dns.nextdns.io/e296f4
+waa-pa.clients6.google.com = server:https://dns.nextdns.io/e296f4
+apis.google.com = server:https://dns.nextdns.io/e296f4
 
 [Rule]
-# Принудительно направляем эти домены в DIRECT, чтобы применился [Host]
 DOMAIN-SUFFIX,gemini.google,DIRECT
 DOMAIN-SUFFIX,bard.google.com,DIRECT
 DOMAIN-SUFFIX,deepmind.com,DIRECT
@@ -54,8 +45,6 @@ DOMAIN-SUFFIX,labs.google,DIRECT
 DOMAIN-SUFFIX,labs.google.com,DIRECT
 DOMAIN-SUFFIX,aistudio.google.com,DIRECT
 DOMAIN-SUFFIX,aitestkitchen.withgoogle.com,DIRECT
-
-# --- Добавлено для синхронизации с блоком [Host] ---
 DOMAIN-SUFFIX,gemini.google.com,DIRECT
 DOMAIN,generativelanguage.googleapis.com,DIRECT
 DOMAIN,proactivebackend-pa.googleapis.com,DIRECT
