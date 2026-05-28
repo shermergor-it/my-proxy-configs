@@ -1,4 +1,4 @@
-#!name=google_ai_hosts_new
+#!name=google_ai_hosts_nextdns
 #!desc=Резолв доменов Gemini, NotebookLM и Labs через NextDNS DoH (e296f4)
 #!category=Custom
 
